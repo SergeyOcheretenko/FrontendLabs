@@ -2,6 +2,7 @@ table {
   border: 1px solid black;
   border-collapse: collapse;
   font-size: 18px;
+  margin-bottom: 30px;
 }
 
 td {
@@ -37,4 +38,50 @@ td {
   background-color: #69458f;
   color: #f5f553;
   transition: 0.8s;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  border-radius: 15%;
+  border: 1px solid black;
+}
+
+.position-box-1 {
+  position: absolute;
+  left: 108px;
+  top: 268px;
+  transform: rotate(45deg);
+  background-color: rgb(217, 232, 255);
+}
+
+.position-box-2 {
+  position: absolute;
+  left: 45px;
+  top: 370px;
+  transform: rotate(20deg);
+  background-color: rgb(255, 255, 132);
+}
+
+.position-box-3 {
+  position: absolute;
+  left: 172px;
+  top: 370px;
+  transform: rotate(-20deg);
+  background-color: rgb(255, 183, 183);
+}
+
+.transform-box-1 {
+  transform: translate(500px, 25px) rotate(45deg);
+  background-color: rgb(217, 232, 255);
+}
+
+.transform-box-2 {
+  transform: translate(437px, 25px) rotate(20deg);
+  background-color: rgb(255, 255, 132);
+}
+
+.transform-box-3 {
+  transform: translate(564px, -77px) rotate(-20deg);
+  background-color: rgb(255, 183, 183);
 }
