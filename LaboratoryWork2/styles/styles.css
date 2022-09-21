@@ -1,0 +1,40 @@
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+td {
+  border: 1px solid black;
+  padding: 10px;
+  width: 150px;
+  height: 30px;
+}
+
+.second-row-cell {
+  width: 240px;
+}
+
+.first-row-cell {
+  background-color: #538f8f;
+  color: white;
+  transition: 0.8s;
+}
+
+.first-row-cell:hover {
+  background-color: #8f6045;
+  transition: 0.8s;
+}
+
+.second-row-cell {
+  background-color: #f5f553;
+  color: #69458f;
+  font-weight: 600;
+  transition: 0.8s;
+}
+
+.second-row-cell:hover {
+  background-color: #69458f;
+  color: #f5f553;
+  transition: 0.8s;
+}
