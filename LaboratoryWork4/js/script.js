@@ -63,7 +63,7 @@ buttonDelete.onclick = () => {
 // ADD NEW IMAGE BUTTON
 
 const imageInput = document.getElementById('button-add');
-imageInput.onclick = function () {
+imageInput.addEventListener('change', function () {
   const reader = new FileReader();
   reader.addEventListener('load', () => {
     const uploadedImage = reader.result;
@@ -72,4 +72,4 @@ imageInput.onclick = function () {
     buttonBig.before(img, document.createElement('br'));
   });
   reader.readAsDataURL(this.files[0]);
-};
+});
