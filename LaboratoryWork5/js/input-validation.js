@@ -23,14 +23,13 @@ function addValidateEvents(id, regEx) {
     validate(id, regEx);
   }
 
-  input.onload = () => { validate(id, regEx); };
+  input.onload = () => validate(id, regEx);
   input.oninput = () => validate(id, regEx);
 }
 
-window.onload = () => {
-  addValidateEvents('name-input', nameValidationRegEx);
-  addValidateEvents('group-input', groupValidationRegEx);
-  addValidateEvents('id-card-input', idCardValidationRegEx);
-  addValidateEvents('date-input', dateValidationRegEx);
-  addValidateEvents('email-input', emailValidationRegEx);
-};
+addValidateEvents('name-input', nameValidationRegEx);
+addValidateEvents('group-input', groupValidationRegEx);
+addValidateEvents('id-card-input', idCardValidationRegEx);
+addValidateEvents('date-input', dateValidationRegEx);
+addValidateEvents('email-input', emailValidationRegEx);
+
