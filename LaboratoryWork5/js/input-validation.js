@@ -2,7 +2,7 @@ const nameValidationRegEx = /^[А-ЩЮЯЇІЄҐ][а-щьюяїієґ]*([-][А-�
 const groupValidationRegEx = /^[А-ЩЮЯЇІЄҐа-щьюяїієґ]{2}-\d{2}$/;
 const idCardValidationRegEx = /^[А-ЩЮЯЇІЄҐ]{2} №\d{6}$/;
 const dateValidationRegEx = /^(0[1-9]|[12][0-9]|3[01]).(0[1-9]|1[012]).(19|20)\d\d$/;
-const emailValidationRegEx = /^[a-z]+([._][a-z])*@[a-z]+.[a-z]+$/;
+const emailValidationRegEx = /^[a-z]+([._][a-z])*@[a-z]+[.][a-z]+$/;
 
 function validate(id, regEx) {
   const input = document.getElementById(id);
